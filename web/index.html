@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decentralized Smart Grid Simulation</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="background-orbit orbit-a"></div>
+    <div class="background-orbit orbit-b"></div>
+    <main class="shell">
+      <section class="hero panel">
+        <div>
+          <p class="eyebrow">Distributed Systems Visualization</p>
+          <h1>Decentralized Smart Grid Simulation</h1>
+          <p class="lede">
+            Gossip, Lamport clocks, Ricart-Agrawala mutex, bully election, and
+            replication rendered as a live browser control room.
+          </p>
+        </div>
+        <div class="hero-metrics">
+          <div class="metric-chip">
+            <span>Tick</span>
+            <strong id="metric-tick">000</strong>
+          </div>
+          <div class="metric-chip">
+            <span>Elapsed</span>
+            <strong id="metric-elapsed">0.0s</strong>
+          </div>
+          <div class="metric-chip">
+            <span>Leader</span>
+            <strong id="metric-leader">None</strong>
+          </div>
+          <div class="metric-chip metric-status" id="metric-status-chip">
+            <span>Status</span>
+            <strong id="metric-status">STABLE</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="overview-grid">
+        <article class="panel status-panel">
+          <div class="panel-header">
+            <h2>Grid Health</h2>
+            <span id="paused-pill" class="pill">Live</span>
+          </div>
+          <div class="balance-row">
+            <div>
+              <p class="label">Balance</p>
+              <strong id="metric-balance" class="big-number">0.0kW</strong>
+            </div>
+            <div>
+              <p class="label">Convergence</p>
+              <strong id="metric-convergence" class="big-number">0/8 nodes converged</strong>
+            </div>
+          </div>
+          <div class="meter">
+            <div id="balance-fill" class="meter-fill"></div>
+          </div>
+          <p id="metric-summary" class="summary-copy">
+            Watching asynchronous power coordination across all eight nodes.
+          </p>
+          <div class="legend">
+            <span><i class="swatch gossip"></i> Gossip</span>
+            <span><i class="swatch mutex"></i> Mutex</span>
+            <span><i class="swatch replicate"></i> Replication</span>
+            <span><i class="swatch crash"></i> Crash</span>
+          </div>
+        </article>
+
+        <article class="panel controls-panel">
+          <div class="panel-header">
+            <h2>Controls</h2>
+            <span class="pill subtle">HTTP API</span>
+          </div>
+          <div class="control-stack">
+            <button id="pause-btn" class="action-button primary">Pause</button>
+            <button id="fault-btn" class="action-button secondary">Trigger Next Fault</button>
+            <button id="reset-btn" class="action-button tertiary">Reset Grid</button>
+          </div>
+          <p class="summary-copy">
+            Controls act on the running threaded simulation through the local FastAPI backend.
+          </p>
+        </article>
+      </section>
+
+      <section class="panel network-panel">
+        <div class="panel-header">
+          <h2>Live Network Map</h2>
+          <span class="pill subtle">500ms refresh</span>
+        </div>
+        <div id="network-map" class="network-map">
+          <svg id="edge-layer" class="edge-layer" viewBox="0 0 1000 620" preserveAspectRatio="none"></svg>
+          <div id="node-layer" class="node-layer"></div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Node Fleet</h2>
+          <span class="pill subtle">Real-time status cards</span>
+        </div>
+        <div id="node-grid" class="node-grid"></div>
+      </section>
+
+      <section class="log-grid">
+        <article class="panel log-panel">
+          <div class="panel-header">
+            <h2>Gossip Activity</h2>
+            <span class="pill subtle">Message stream</span>
+          </div>
+          <div id="gossip-log" class="log-list"></div>
+        </article>
+
+        <article class="panel log-panel">
+          <div class="panel-header">
+            <h2>Event Timeline</h2>
+            <span class="pill subtle">Faults and coordination</span>
+          </div>
+          <div id="event-log" class="log-list"></div>
+        </article>
+      </section>
+    </main>
+  <script type="module" src="/static/app.js"></script>
+  </body>
+  </html>

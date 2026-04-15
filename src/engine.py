@@ -211,13 +211,15 @@ class GridSimulation:
         self.log_event("fault", f"[Tick {self.current_tick:02d}] {prefix}: {description}")
 
         if action == "solar_drop":
-            self.flags["solar_drop_until"] = max(self.flags["solar_drop_until"], self.current_tick + 5)
+            self.flags["solar_drop_until"] = max(self.flags["solar_drop_until"], self.current_tick + 15)
             self.trigger_mutex_request("N3", "rerouting solar shortfall", support_nodes=("N3", "N8"))
+            self.trigger_mutex_request("N5", "critical solar shortfall", support_nodes=("N7", "N8"))
             return
 
         if action == "demand_spike":
-            self.flags["demand_spike_until"] = max(self.flags["demand_spike_until"], self.current_tick + 3)
+            self.flags["demand_spike_until"] = max(self.flags["demand_spike_until"], self.current_tick + 10)
             self.trigger_mutex_request("N5", "balancing demand spike", support_nodes=("N3", "N8"))
+            self.trigger_mutex_request("N7", "emergency power draw", support_nodes=("N3", "N8"))
             return
 
         if action == "node_crash":
@@ -250,7 +252,7 @@ class GridSimulation:
 
         if action == "storage_full":
             self.flags["storage_full"] = True
-            self.support_until["N8"] = max(self.support_until["N8"], self.current_tick + 5)
+            self.support_until["N8"] = max(self.support_until["N8"], self.current_tick + 20)
             self.log_event(
                 "fault",
                 f"[Tick {self.current_tick:02d}] N3 reached storage capacity; N8 carrying the remainder",

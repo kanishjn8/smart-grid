@@ -214,13 +214,13 @@ class Node(threading.Thread):
             if tick <= self.engine.support_until["N3"]:
                 power = 2.0
         elif self.node_id == "N4":
-            power = -6.0 if tick <= self.engine.flags["demand_spike_until"] else -3.0
+            power = -8.0 if tick <= self.engine.flags["demand_spike_until"] else -3.0
         elif self.node_id == "N5":
             power = 0.3
             if tick <= self.engine.support_until["N5"]:
                 power = 0.8
         elif self.node_id == "N6":
-            power = -2.0 if self.engine.flags["ev_connected"] else 0.0
+            power = -3.5 if self.engine.flags["ev_connected"] else 0.0
         elif self.node_id == "N7":
             power = 0.0
             if self.state.is_leader or tick <= self.engine.support_until["N7"]:

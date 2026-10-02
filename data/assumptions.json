@@ -1,0 +1,295 @@
+{
+  "assets": {
+    "battery_kwh": {
+      "value": 160,
+      "unit": "kWh",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": "See scenario sensitivities; otherwise fixed assumption"
+    },
+    "initial_soc": {
+      "value": 0.65,
+      "unit": "fraction / boolean / optional denominator; see field name",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": "See scenario sensitivities; otherwise fixed assumption"
+    },
+    "reserve_soc": {
+      "value": 0.1,
+      "unit": "fraction / boolean / optional denominator; see field name",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": "See scenario sensitivities; otherwise fixed assumption"
+    },
+    "charge_kw": {
+      "value": 50,
+      "unit": "kW",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": "See scenario sensitivities; otherwise fixed assumption"
+    },
+    "discharge_kw": {
+      "value": 50,
+      "unit": "kW",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": "See scenario sensitivities; otherwise fixed assumption"
+    },
+    "eta_charge": {
+      "value": 0.95,
+      "unit": "fraction / boolean / optional denominator; see field name",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": "See scenario sensitivities; otherwise fixed assumption"
+    },
+    "eta_discharge": {
+      "value": 0.95,
+      "unit": "fraction / boolean / optional denominator; see field name",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": "See scenario sensitivities; otherwise fixed assumption"
+    },
+    "pv_kw": {
+      "value": 100,
+      "unit": "kW",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": "See scenario sensitivities; otherwise fixed assumption"
+    },
+    "grid_limit_kw": {
+      "value": 65,
+      "unit": "kW",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": "See scenario sensitivities; otherwise fixed assumption"
+    },
+    "export_limit_kw": {
+      "value": 0,
+      "unit": "kW",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": "See scenario sensitivities; otherwise fixed assumption"
+    },
+    "households": {
+      "value": 100,
+      "unit": "count",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": "See scenario sensitivities; otherwise fixed assumption"
+    },
+    "island_capable": {
+      "value": true,
+      "unit": "fraction / boolean / optional denominator; see field name",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": "See scenario sensitivities; otherwise fixed assumption"
+    }
+  },
+  "economics": {
+    "pv_inr_per_kw": {
+      "value": 45000,
+      "unit": "INR/kW",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": [
+        31499.999999999996,
+        62999.99999999999
+      ]
+    },
+    "battery_inr_per_kwh": {
+      "value": 18000,
+      "unit": "INR/kWh",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": [
+        12600.0,
+        25200.0
+      ]
+    },
+    "inverter_inr": {
+      "value": 700000,
+      "unit": "INR",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": [
+        489999.99999999994,
+        979999.9999999999
+      ]
+    },
+    "protection_isolation_inr": {
+      "value": 400000,
+      "unit": "INR",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": [
+        280000.0,
+        560000.0
+      ]
+    },
+    "meters_inr": {
+      "value": 200000,
+      "unit": "INR",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": [
+        140000.0,
+        280000.0
+      ]
+    },
+    "gateway_inr": {
+      "value": 30000,
+      "unit": "INR",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": [
+        21000.0,
+        42000.0
+      ]
+    },
+    "installation_inr": {
+      "value": 450000,
+      "unit": "INR",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": [
+        315000.0,
+        630000.0
+      ]
+    },
+    "annual_connectivity_inr": {
+      "value": 12000,
+      "unit": "INR",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": [
+        8400.0,
+        16800.0
+      ]
+    },
+    "annual_operator_inr": {
+      "value": 120000,
+      "unit": "INR",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": [
+        84000.0,
+        168000.0
+      ]
+    },
+    "annual_maintenance_fraction": {
+      "value": 0.02,
+      "unit": "fraction / boolean / optional denominator; see field name",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": "See scenario sensitivities; otherwise fixed assumption"
+    },
+    "recycling_inr": {
+      "value": 100000,
+      "unit": "INR",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": [
+        70000.0,
+        140000.0
+      ]
+    },
+    "discount_rate": {
+      "value": 0.08,
+      "unit": "fraction / boolean / optional denominator; see field name",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": "See scenario sensitivities; otherwise fixed assumption"
+    },
+    "lifetime_years": {
+      "value": 20,
+      "unit": "years",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": "See scenario sensitivities; otherwise fixed assumption"
+    },
+    "battery_replacement_years": {
+      "value": 10,
+      "unit": "years",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": "See scenario sensitivities; otherwise fixed assumption"
+    },
+    "households": {
+      "value": 100,
+      "unit": "count",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": "See scenario sensitivities; otherwise fixed assumption"
+    },
+    "existing_pv": {
+      "value": false,
+      "unit": "fraction / boolean / optional denominator; see field name",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": "See scenario sensitivities; otherwise fixed assumption"
+    },
+    "existing_battery": {
+      "value": false,
+      "unit": "fraction / boolean / optional denominator; see field name",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": "See scenario sensitivities; otherwise fixed assumption"
+    },
+    "tariff_inr_per_kwh": {
+      "value": 7,
+      "unit": "INR/kWh",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": [
+        4.8999999999999995,
+        9.799999999999999
+      ]
+    },
+    "annual_served_kwh": {
+      "value": null,
+      "unit": "kWh",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": "See scenario sensitivities; otherwise fixed assumption"
+    },
+    "annual_avoided_ens_kwh": {
+      "value": null,
+      "unit": "kWh",
+      "status": "assumed",
+      "date": "2026-09-20",
+      "source": "Engineering design placeholder, not measured or quoted; see docs/assumptions.md and docs/economics.md",
+      "range": "See scenario sensitivities; otherwise fixed assumption"
+    }
+  }
+}

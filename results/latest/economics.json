@@ -1,0 +1,54 @@
+{
+  "currency": "INR",
+  "status": "assumed",
+  "source": "Unvalidated engineering budget placeholders; replace with dated local quotations",
+  "date": "2026-09-20",
+  "range_basis": "All monetary inputs \u00d70.7 / \u00d71 / \u00d71.4; sensitivity, not confidence bounds",
+  "inputs": {
+    "pv_inr_per_kw": 45000,
+    "battery_inr_per_kwh": 18000,
+    "inverter_inr": 700000,
+    "protection_isolation_inr": 400000,
+    "meters_inr": 200000,
+    "gateway_inr": 30000,
+    "installation_inr": 450000,
+    "annual_connectivity_inr": 12000,
+    "annual_operator_inr": 120000,
+    "annual_maintenance_fraction": 0.02,
+    "recycling_inr": 100000,
+    "discount_rate": 0.08,
+    "lifetime_years": 20,
+    "battery_replacement_years": 10,
+    "households": 100,
+    "existing_pv": false,
+    "existing_battery": false,
+    "tariff_inr_per_kwh": 7,
+    "annual_served_kwh": null,
+    "annual_avoided_ens_kwh": null
+  },
+  "low": {
+    "initial_capex_inr": 6412000.0,
+    "annualized_system_cost_inr": 970355.4138174944,
+    "household_monthly_inr": 808.6295115145787,
+    "inr_per_served_kwh": null,
+    "inr_per_avoided_unserved_kwh": null
+  },
+  "base": {
+    "initial_capex_inr": 9160000,
+    "annualized_system_cost_inr": 1386222.0197392777,
+    "household_monthly_inr": 1155.185016449398,
+    "inr_per_served_kwh": null,
+    "inr_per_avoided_unserved_kwh": null
+  },
+  "high": {
+    "initial_capex_inr": 12824000.0,
+    "annualized_system_cost_inr": 1940710.8276349888,
+    "household_monthly_inr": 1617.2590230291573,
+    "inr_per_served_kwh": null,
+    "inr_per_avoided_unserved_kwh": null
+  },
+  "incentives_inr": 0,
+  "emissions_kgco2e": null,
+  "emissions_note": "Not calculated: no verified location/year-specific grid factor or generator fuel trace supplied.",
+  "boundary": "Capital and O&M only. Energy purchases, financing taxes, outage losses and tariff savings are separate; no annual extrapolation of a stress day."
+}

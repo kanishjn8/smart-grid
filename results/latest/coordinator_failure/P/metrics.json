@@ -1,0 +1,42 @@
+{
+  "critical_interruption_hours": 0.0,
+  "scarcity_window_hours": 5.0,
+  "scarcity_critical_availability_pct": 100.0,
+  "critical_ens_kwh": 0.0,
+  "normal_ens_kwh": 9.143348698529683,
+  "total_ens_kwh": 9.143348698529683,
+  "flexible_missed_kwh": 0,
+  "critical_energy_served_pct": 100.0,
+  "critical_availability_pct": 100.0,
+  "interruption_minutes": 35,
+  "critical_interruption_minutes": 0,
+  "peak_import_kw": 65.0,
+  "grid_import_kwh": 533.6059748057879,
+  "grid_export_kwh": 0.0,
+  "served_kwh": 1003.0805871421951,
+  "task_completion_pct": 100.0,
+  "max_task_completion_delay_minutes": 180,
+  "renewable_utilization_pct": 84.10735038307283,
+  "battery_throughput_kwh": 256.18444115814395,
+  "equivalent_full_cycles": 0.8005763786191998,
+  "initial_battery_kwh": 104.0,
+  "terminal_battery_kwh": 73.41521910023674,
+  "terminal_energy_shortfall_kwh": 30.58478089976326,
+  "worst_household_normal_service_fraction": 0.9866173472285062,
+  "household_service_disparity": 0.0,
+  "max_consecutive_curtailment_minutes": 35,
+  "fairness_limit_violation_intervals": 0,
+  "max_balance_residual_kw": 1.4210854715202004e-14,
+  "forecast_demand_mae_kw": 0.8672244910221159,
+  "forecast_pv_mae_kw": 2.619183852920109,
+  "rejected_commands": 1,
+  "fallback_intervals": 0,
+  "detection_latency_rounds": [
+    2
+  ],
+  "recovery_latency_rounds": [
+    0
+  ],
+  "forecast_demand_nmae_mean": 0.022749475656790932,
+  "forecast_pv_nmae_capacity": 0.026191838529201088
+}

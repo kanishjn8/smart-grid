@@ -1,0 +1,57 @@
+{
+  "scenario_id": "coordinator_failure",
+  "scenario_hash": "e5751062c752d9de12f5deb213cb2f0ceee269f001773ac82229fbe6801a2be4",
+  "seed": 100,
+  "controller": "B1",
+  "controller_version": "gridsathi-v1",
+  "forecast_version": "profile-v1",
+  "config": {
+    "forecast_error": 1,
+    "loss": 0,
+    "delay_rounds": 0,
+    "duplicate": 0,
+    "timeout_rounds": 3
+  },
+  "code_revision": "71030fccfa5cb433cc074a32d8e64454dcf91f08",
+  "code_hash": "4f3becacb57882fab814a1df3ef4b50d750fbbd6d7867049fd0119e99456c3ce",
+  "source_file_hashes": {
+    "src/__init__.py": "7d60865470353c0d41e6c4f7f9dedd7edc3f06f0e5c6c811feab4662d7d17881",
+    "src/api.py": "9f0e7938a742863d79cda1b4c97093e1f1d32c8ca9f524f5aacf672ec3352a3b",
+    "src/control/__init__.py": "996b7ff269c2a8503ac6b25f87e327e6b75852a28a17c1043fbf5987ff2e5b9d",
+    "src/coordination/__init__.py": "d63c4652426185e2dbd492993316836ad1be822fc9b4da775a6a8b0b88e71a6e",
+    "src/domain/__init__.py": "6e00b50d72853c2cdbcfb0e695ec2c770a6fef696145b7bfb0094214bd9bb1bf",
+    "src/domain/plant.py": "80bfe200d91b85d494d56be34dd1a61a54e960d513a6b267ffefe576590aa448",
+    "src/evaluation/economics.py": "22f04526ea2bfe4f961e03c6857c8b8bb986a0f76b6e71cc17c62265bda20308",
+    "src/evaluation/metrics.py": "7bcf93259845cfeb6968f0bac3e38884c6f55c58d9e0ab701ae489322361323a",
+    "src/evaluation/runner.py": "fd93fe630bcecc9d3d9b58ae72a7caf1d0c1510443869d3c30bb3e3cf3c32263",
+    "src/forecasting/__init__.py": "fc2f16bfe71bc59e21849e8e5be2cd4108afb630195bf2aeafa22eda8594e438",
+    "src/scenarios/__init__.py": "716a951b929515445107314df7ba2b37caca41245a7f5cf7fc9c5bf45996062d",
+    "dashboard.py": "a57f06334b6b0f70d23df3562d68294eda60ef75b1c78b31fc386c8d631d2ffa",
+    "evaluate.py": "34fcdfed00c4aa1c06eeebd450a5b26959a44b4dbc0a3dbdad5a9a8a9939c63d",
+    "uv.lock": "ec74b1ed738f4cf9a07c1c59eaedde91f16fd745c9f10f090d2efa10266a91f2"
+  },
+  "data_hashes": {
+    "critical_kw": "6cd0f17702bc37be8f5be590f3a0bf83d9ecc838da254c7beb6fff9125ead334",
+    "normal_kw": "2c9734c34836483b263877c280f6982924021048ae0195b58051f207f2a99ac7",
+    "pv_kw": "3c4a3a9b50e8b849b269fd651fc681961447e948e78d10481b9b35354b2bf3e0",
+    "wind_kw": "c5cc99840fe4df5814570a37bf9af277df093ad3128b474d98b55e0bbfc7676e",
+    "grid_kw": "769e8f7133f5d210496f94b7990dd388f2b06797f05d59e52aa073a615e641fc"
+  },
+  "environment": {
+    "python": "3.12.13",
+    "fastapi": "0.135.3",
+    "pydantic": "2.13.0"
+  },
+  "units": {
+    "power": "kW",
+    "energy": "kWh",
+    "protocol_latency": "abstract rounds"
+  },
+  "artifact_paths": [
+    "manifest.json",
+    "metrics.json",
+    "series.csv",
+    "run.json"
+  ],
+  "provenance": "Synthetic design assumptions, not a measured community"
+}

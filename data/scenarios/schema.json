@@ -1,0 +1,292 @@
+{
+  "$defs": {
+    "Assets": {
+      "additionalProperties": false,
+      "properties": {
+        "battery_kwh": {
+          "default": 160,
+          "maximum": 10000,
+          "minimum": 0,
+          "title": "Battery Kwh",
+          "type": "number"
+        },
+        "initial_soc": {
+          "default": 0.65,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Initial Soc",
+          "type": "number"
+        },
+        "reserve_soc": {
+          "default": 0.1,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Reserve Soc",
+          "type": "number"
+        },
+        "charge_kw": {
+          "default": 50,
+          "maximum": 10000,
+          "minimum": 0,
+          "title": "Charge Kw",
+          "type": "number"
+        },
+        "discharge_kw": {
+          "default": 50,
+          "maximum": 10000,
+          "minimum": 0,
+          "title": "Discharge Kw",
+          "type": "number"
+        },
+        "eta_charge": {
+          "default": 0.95,
+          "exclusiveMinimum": 0,
+          "maximum": 1,
+          "title": "Eta Charge",
+          "type": "number"
+        },
+        "eta_discharge": {
+          "default": 0.95,
+          "exclusiveMinimum": 0,
+          "maximum": 1,
+          "title": "Eta Discharge",
+          "type": "number"
+        },
+        "pv_kw": {
+          "default": 100,
+          "maximum": 10000,
+          "minimum": 0,
+          "title": "Pv Kw",
+          "type": "number"
+        },
+        "grid_limit_kw": {
+          "default": 65,
+          "maximum": 10000,
+          "minimum": 0,
+          "title": "Grid Limit Kw",
+          "type": "number"
+        },
+        "export_limit_kw": {
+          "default": 0,
+          "maximum": 10000,
+          "minimum": 0,
+          "title": "Export Limit Kw",
+          "type": "number"
+        },
+        "households": {
+          "default": 100,
+          "maximum": 10000,
+          "minimum": 1,
+          "title": "Households",
+          "type": "integer"
+        },
+        "island_capable": {
+          "default": true,
+          "title": "Island Capable",
+          "type": "boolean"
+        }
+      },
+      "title": "Assets",
+      "type": "object"
+    },
+    "Fault": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "controller_failure",
+            "partition",
+            "battery_unavailable",
+            "generator_loss"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "start_step": {
+          "minimum": 0,
+          "title": "Start Step",
+          "type": "integer"
+        },
+        "end_step": {
+          "exclusiveMinimum": 0,
+          "title": "End Step",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "kind",
+        "start_step",
+        "end_step"
+      ],
+      "title": "Fault",
+      "type": "object"
+    },
+    "Task": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "required_kwh": {
+          "exclusiveMinimum": 0,
+          "maximum": 10000,
+          "title": "Required Kwh",
+          "type": "number"
+        },
+        "release_step": {
+          "minimum": 0,
+          "title": "Release Step",
+          "type": "integer"
+        },
+        "deadline_step": {
+          "exclusiveMinimum": 0,
+          "title": "Deadline Step",
+          "type": "integer"
+        },
+        "max_kw": {
+          "exclusiveMinimum": 0,
+          "maximum": 10000,
+          "title": "Max Kw",
+          "type": "number"
+        },
+        "consent": {
+          "default": true,
+          "title": "Consent",
+          "type": "boolean"
+        },
+        "interruptible": {
+          "const": true,
+          "default": true,
+          "title": "Interruptible",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "required_kwh",
+        "release_step",
+        "deadline_step",
+        "max_kw"
+      ],
+      "title": "Task",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "timezone": {
+      "const": "Asia/Kolkata",
+      "default": "Asia/Kolkata",
+      "title": "Timezone",
+      "type": "string"
+    },
+    "start": {
+      "default": "2026-01-01T00:00:00+05:30",
+      "format": "date-time",
+      "title": "Start",
+      "type": "string"
+    },
+    "interval_minutes": {
+      "default": 5,
+      "maximum": 60,
+      "minimum": 1,
+      "title": "Interval Minutes",
+      "type": "integer"
+    },
+    "seed": {
+      "default": 7,
+      "maximum": 2147483647,
+      "minimum": 0,
+      "title": "Seed",
+      "type": "integer"
+    },
+    "assets": {
+      "$ref": "#/$defs/Assets",
+      "default": {
+        "battery_kwh": 160.0,
+        "initial_soc": 0.65,
+        "reserve_soc": 0.1,
+        "charge_kw": 50.0,
+        "discharge_kw": 50.0,
+        "eta_charge": 0.95,
+        "eta_discharge": 0.95,
+        "pv_kw": 100.0,
+        "grid_limit_kw": 65.0,
+        "export_limit_kw": 0.0,
+        "households": 100,
+        "island_capable": true
+      }
+    },
+    "critical_kw": {
+      "items": {
+        "type": "number"
+      },
+      "title": "Critical Kw",
+      "type": "array"
+    },
+    "normal_kw": {
+      "items": {
+        "type": "number"
+      },
+      "title": "Normal Kw",
+      "type": "array"
+    },
+    "pv_kw": {
+      "items": {
+        "type": "number"
+      },
+      "title": "Pv Kw",
+      "type": "array"
+    },
+    "wind_kw": {
+      "items": {
+        "type": "number"
+      },
+      "title": "Wind Kw",
+      "type": "array"
+    },
+    "grid_kw": {
+      "items": {
+        "type": "number"
+      },
+      "title": "Grid Kw",
+      "type": "array"
+    },
+    "tasks": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Task"
+      },
+      "title": "Tasks",
+      "type": "array"
+    },
+    "faults": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Fault"
+      },
+      "title": "Faults",
+      "type": "array"
+    },
+    "provenance": {
+      "default": "Synthetic design assumptions, not a measured community",
+      "title": "Provenance",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "critical_kw",
+    "normal_kw",
+    "pv_kw",
+    "wind_kw",
+    "grid_kw"
+  ],
+  "title": "Scenario",
+  "type": "object"
+}

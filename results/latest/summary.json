@@ -1,0 +1,660 @@
+[
+  {
+    "scenario": "normal",
+    "controller": "B1",
+    "n": 10,
+    "metrics": {
+      "critical_ens_kwh": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "total_ens_kwh": {
+        "mean": 6.868579779014301e-15,
+        "minimum": 4.440892098500626e-15,
+        "maximum": 9.177843670234626e-15
+      },
+      "peak_import_kw": {
+        "mean": 64.59285984286117,
+        "minimum": 64.02851211137657,
+        "maximum": 64.98733590817866
+      },
+      "terminal_battery_kwh": {
+        "mean": 160.0,
+        "minimum": 160.0,
+        "maximum": 160.0
+      },
+      "flexible_missed_kwh": {
+        "mean": 0,
+        "minimum": 0,
+        "maximum": 0
+      },
+      "critical_interruption_hours": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "critical_availability_pct": {
+        "mean": 100.0,
+        "minimum": 100.0,
+        "maximum": 100.0
+      },
+      "scarcity_critical_availability_pct": {
+        "mean": null,
+        "minimum": null,
+        "maximum": null
+      }
+    }
+  },
+  {
+    "scenario": "normal",
+    "controller": "P",
+    "n": 10,
+    "metrics": {
+      "critical_ens_kwh": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "total_ens_kwh": {
+        "mean": 6.868579779014301e-15,
+        "minimum": 4.440892098500626e-15,
+        "maximum": 9.177843670234626e-15
+      },
+      "peak_import_kw": {
+        "mean": 64.59285984286117,
+        "minimum": 64.02851211137657,
+        "maximum": 64.98733590817866
+      },
+      "terminal_battery_kwh": {
+        "mean": 160.0,
+        "minimum": 160.0,
+        "maximum": 160.0
+      },
+      "flexible_missed_kwh": {
+        "mean": 0,
+        "minimum": 0,
+        "maximum": 0
+      },
+      "critical_interruption_hours": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "critical_availability_pct": {
+        "mean": 100.0,
+        "minimum": 100.0,
+        "maximum": 100.0
+      },
+      "scarcity_critical_availability_pct": {
+        "mean": null,
+        "minimum": null,
+        "maximum": null
+      }
+    }
+  },
+  {
+    "scenario": "cloudy_evening",
+    "controller": "B1",
+    "n": 10,
+    "metrics": {
+      "critical_ens_kwh": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "total_ens_kwh": {
+        "mean": 7.776443475470186,
+        "minimum": 5.74776578111455,
+        "maximum": 9.143348698529683
+      },
+      "peak_import_kw": {
+        "mean": 40.48352053803346,
+        "minimum": 39.75755584890544,
+        "maximum": 41.03551330312233
+      },
+      "terminal_battery_kwh": {
+        "mean": 16.0,
+        "minimum": 16.0,
+        "maximum": 16.0
+      },
+      "flexible_missed_kwh": {
+        "mean": 0,
+        "minimum": 0,
+        "maximum": 0
+      },
+      "critical_interruption_hours": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "critical_availability_pct": {
+        "mean": 100.0,
+        "minimum": 100.0,
+        "maximum": 100.0
+      },
+      "scarcity_critical_availability_pct": {
+        "mean": 100.0,
+        "minimum": 100.0,
+        "maximum": 100.0
+      }
+    }
+  },
+  {
+    "scenario": "cloudy_evening",
+    "controller": "P",
+    "n": 10,
+    "metrics": {
+      "critical_ens_kwh": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "total_ens_kwh": {
+        "mean": 7.776443475470187,
+        "minimum": 5.747765781114551,
+        "maximum": 9.143348698529683
+      },
+      "peak_import_kw": {
+        "mean": 65.0,
+        "minimum": 65.0,
+        "maximum": 65.0
+      },
+      "terminal_battery_kwh": {
+        "mean": 73.27329992494127,
+        "minimum": 73.01204175587792,
+        "maximum": 73.56847216374432
+      },
+      "flexible_missed_kwh": {
+        "mean": 0,
+        "minimum": 0,
+        "maximum": 0
+      },
+      "critical_interruption_hours": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "critical_availability_pct": {
+        "mean": 100.0,
+        "minimum": 100.0,
+        "maximum": 100.0
+      },
+      "scarcity_critical_availability_pct": {
+        "mean": 100.0,
+        "minimum": 100.0,
+        "maximum": 100.0
+      }
+    }
+  },
+  {
+    "scenario": "extended_outage",
+    "controller": "B1",
+    "n": 10,
+    "metrics": {
+      "critical_ens_kwh": {
+        "mean": 37.89410772052797,
+        "minimum": 37.58480759544326,
+        "maximum": 38.0
+      },
+      "total_ens_kwh": {
+        "mean": 165.5008209228635,
+        "minimum": 163.59978357515232,
+        "maximum": 166.79968542590802
+      },
+      "peak_import_kw": {
+        "mean": 37.01107395993172,
+        "minimum": 35.50131354568772,
+        "maximum": 38.880126682718334
+      },
+      "terminal_battery_kwh": {
+        "mean": 16.0,
+        "minimum": 16.0,
+        "maximum": 16.0
+      },
+      "flexible_missed_kwh": {
+        "mean": 0,
+        "minimum": 0,
+        "maximum": 0
+      },
+      "critical_interruption_hours": {
+        "mean": 3.1666666666666665,
+        "minimum": 3.1666666666666665,
+        "maximum": 3.1666666666666665
+      },
+      "critical_availability_pct": {
+        "mean": 86.80555555555556,
+        "minimum": 86.80555555555556,
+        "maximum": 86.80555555555556
+      },
+      "scarcity_critical_availability_pct": {
+        "mean": 47.22222222222222,
+        "minimum": 47.22222222222222,
+        "maximum": 47.22222222222222
+      }
+    }
+  },
+  {
+    "scenario": "extended_outage",
+    "controller": "P",
+    "n": 10,
+    "metrics": {
+      "critical_ens_kwh": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "total_ens_kwh": {
+        "mean": 177.23660886728555,
+        "minimum": 175.37935713838246,
+        "maximum": 178.448139067509
+      },
+      "peak_import_kw": {
+        "mean": 65.0,
+        "minimum": 65.0,
+        "maximum": 65.0
+      },
+      "terminal_battery_kwh": {
+        "mean": 59.71491949409336,
+        "minimum": 59.45833534354206,
+        "maximum": 59.879354581415384
+      },
+      "flexible_missed_kwh": {
+        "mean": 0,
+        "minimum": 0,
+        "maximum": 0
+      },
+      "critical_interruption_hours": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "critical_availability_pct": {
+        "mean": 100.0,
+        "minimum": 100.0,
+        "maximum": 100.0
+      },
+      "scarcity_critical_availability_pct": {
+        "mean": 100.0,
+        "minimum": 100.0,
+        "maximum": 100.0
+      }
+    }
+  },
+  {
+    "scenario": "coordinator_failure",
+    "controller": "B1",
+    "n": 10,
+    "metrics": {
+      "critical_ens_kwh": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "total_ens_kwh": {
+        "mean": 7.776443475470186,
+        "minimum": 5.74776578111455,
+        "maximum": 9.143348698529683
+      },
+      "peak_import_kw": {
+        "mean": 40.48352053803346,
+        "minimum": 39.75755584890544,
+        "maximum": 41.03551330312233
+      },
+      "terminal_battery_kwh": {
+        "mean": 16.0,
+        "minimum": 16.0,
+        "maximum": 16.0
+      },
+      "flexible_missed_kwh": {
+        "mean": 0,
+        "minimum": 0,
+        "maximum": 0
+      },
+      "critical_interruption_hours": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "critical_availability_pct": {
+        "mean": 100.0,
+        "minimum": 100.0,
+        "maximum": 100.0
+      },
+      "scarcity_critical_availability_pct": {
+        "mean": 100.0,
+        "minimum": 100.0,
+        "maximum": 100.0
+      }
+    }
+  },
+  {
+    "scenario": "coordinator_failure",
+    "controller": "P",
+    "n": 10,
+    "metrics": {
+      "critical_ens_kwh": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "total_ens_kwh": {
+        "mean": 7.776443475470187,
+        "minimum": 5.747765781114551,
+        "maximum": 9.143348698529683
+      },
+      "peak_import_kw": {
+        "mean": 65.0,
+        "minimum": 65.0,
+        "maximum": 65.0
+      },
+      "terminal_battery_kwh": {
+        "mean": 73.27329992494127,
+        "minimum": 73.01204175587792,
+        "maximum": 73.56847216374432
+      },
+      "flexible_missed_kwh": {
+        "mean": 0,
+        "minimum": 0,
+        "maximum": 0
+      },
+      "critical_interruption_hours": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "critical_availability_pct": {
+        "mean": 100.0,
+        "minimum": 100.0,
+        "maximum": 100.0
+      },
+      "scarcity_critical_availability_pct": {
+        "mean": 100.0,
+        "minimum": 100.0,
+        "maximum": 100.0
+      }
+    }
+  },
+  {
+    "scenario": "partition",
+    "controller": "B1",
+    "n": 10,
+    "metrics": {
+      "critical_ens_kwh": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "total_ens_kwh": {
+        "mean": 7.776443475470186,
+        "minimum": 5.74776578111455,
+        "maximum": 9.143348698529683
+      },
+      "peak_import_kw": {
+        "mean": 40.48352053803346,
+        "minimum": 39.75755584890544,
+        "maximum": 41.03551330312233
+      },
+      "terminal_battery_kwh": {
+        "mean": 16.0,
+        "minimum": 16.0,
+        "maximum": 16.0
+      },
+      "flexible_missed_kwh": {
+        "mean": 0,
+        "minimum": 0,
+        "maximum": 0
+      },
+      "critical_interruption_hours": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "critical_availability_pct": {
+        "mean": 100.0,
+        "minimum": 100.0,
+        "maximum": 100.0
+      },
+      "scarcity_critical_availability_pct": {
+        "mean": 100.0,
+        "minimum": 100.0,
+        "maximum": 100.0
+      }
+    }
+  },
+  {
+    "scenario": "partition",
+    "controller": "P",
+    "n": 10,
+    "metrics": {
+      "critical_ens_kwh": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "total_ens_kwh": {
+        "mean": 7.776443475470187,
+        "minimum": 5.747765781114551,
+        "maximum": 9.143348698529683
+      },
+      "peak_import_kw": {
+        "mean": 65.0,
+        "minimum": 65.0,
+        "maximum": 65.0
+      },
+      "terminal_battery_kwh": {
+        "mean": 73.27329992494127,
+        "minimum": 73.01204175587792,
+        "maximum": 73.56847216374432
+      },
+      "flexible_missed_kwh": {
+        "mean": 0,
+        "minimum": 0,
+        "maximum": 0
+      },
+      "critical_interruption_hours": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "critical_availability_pct": {
+        "mean": 100.0,
+        "minimum": 100.0,
+        "maximum": 100.0
+      },
+      "scarcity_critical_availability_pct": {
+        "mean": 100.0,
+        "minimum": 100.0,
+        "maximum": 100.0
+      }
+    }
+  },
+  {
+    "scenario": "flex_arrival",
+    "controller": "B1",
+    "n": 10,
+    "metrics": {
+      "critical_ens_kwh": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "total_ens_kwh": {
+        "mean": 200.631522496434,
+        "minimum": 198.7632600955717,
+        "maximum": 202.04459930132174
+      },
+      "peak_import_kw": {
+        "mean": 65.0,
+        "minimum": 65.0,
+        "maximum": 65.0
+      },
+      "terminal_battery_kwh": {
+        "mean": 16.0,
+        "minimum": 16.0,
+        "maximum": 16.0
+      },
+      "flexible_missed_kwh": {
+        "mean": 143.8469459786492,
+        "minimum": 142.5559015479236,
+        "maximum": 144.94784796804322
+      },
+      "critical_interruption_hours": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "critical_availability_pct": {
+        "mean": 100.0,
+        "minimum": 100.0,
+        "maximum": 100.0
+      },
+      "scarcity_critical_availability_pct": {
+        "mean": 100.0,
+        "minimum": 100.0,
+        "maximum": 100.0
+      }
+    }
+  },
+  {
+    "scenario": "flex_arrival",
+    "controller": "P",
+    "n": 10,
+    "metrics": {
+      "critical_ens_kwh": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "total_ens_kwh": {
+        "mean": 200.60940557078638,
+        "minimum": 198.68068306784636,
+        "maximum": 202.04459930132174
+      },
+      "peak_import_kw": {
+        "mean": 65.0,
+        "minimum": 65.0,
+        "maximum": 65.0
+      },
+      "terminal_battery_kwh": {
+        "mean": 47.46234402049116,
+        "minimum": 47.25045447507165,
+        "maximum": 47.67140717288932
+      },
+      "flexible_missed_kwh": {
+        "mean": 143.82482905300157,
+        "minimum": 142.53194154114342,
+        "maximum": 144.93154337834747
+      },
+      "critical_interruption_hours": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "critical_availability_pct": {
+        "mean": 100.0,
+        "minimum": 100.0,
+        "maximum": 100.0
+      },
+      "scarcity_critical_availability_pct": {
+        "mean": 100.0,
+        "minimum": 100.0,
+        "maximum": 100.0
+      }
+    }
+  },
+  {
+    "scenario": "resource_exhaustion",
+    "controller": "B1",
+    "n": 10,
+    "metrics": {
+      "critical_ens_kwh": {
+        "mean": 61.008741437576155,
+        "minimum": 61.0,
+        "maximum": 61.08741437576157
+      },
+      "total_ens_kwh": {
+        "mean": 257.4780795394862,
+        "minimum": 255.74053862713566,
+        "maximum": 259.1195107229162
+      },
+      "peak_import_kw": {
+        "mean": 35.35025483269965,
+        "minimum": 34.645864550891645,
+        "maximum": 35.98638530304301
+      },
+      "terminal_battery_kwh": {
+        "mean": 16.0,
+        "minimum": 16.0,
+        "maximum": 16.0
+      },
+      "flexible_missed_kwh": {
+        "mean": 1.554312234475219e-16,
+        "minimum": 0,
+        "maximum": 4.440892098500626e-16
+      },
+      "critical_interruption_hours": {
+        "mean": 5.341666666666667,
+        "minimum": 5.333333333333333,
+        "maximum": 5.416666666666666
+      },
+      "critical_availability_pct": {
+        "mean": 77.74305555555554,
+        "minimum": 77.43055555555556,
+        "maximum": 77.77777777777777
+      },
+      "scarcity_critical_availability_pct": {
+        "mean": 46.58333333333333,
+        "minimum": 45.833333333333336,
+        "maximum": 46.666666666666664
+      }
+    }
+  },
+  {
+    "scenario": "resource_exhaustion",
+    "controller": "P",
+    "n": 10,
+    "metrics": {
+      "critical_ens_kwh": {
+        "mean": 17.016017210230327,
+        "minimum": 16.648742673415878,
+        "maximum": 17.602926996452666
+      },
+      "total_ens_kwh": {
+        "mean": 257.47807953948626,
+        "minimum": 255.74053862713578,
+        "maximum": 259.1195107229162
+      },
+      "peak_import_kw": {
+        "mean": 35.35025483269965,
+        "minimum": 34.645864550891645,
+        "maximum": 35.98638530304301
+      },
+      "terminal_battery_kwh": {
+        "mean": 16.0,
+        "minimum": 16.0,
+        "maximum": 16.0
+      },
+      "flexible_missed_kwh": {
+        "mean": 1.554312234475219e-16,
+        "minimum": 0,
+        "maximum": 4.440892098500626e-16
+      },
+      "critical_interruption_hours": {
+        "mean": 1.7166666666666666,
+        "minimum": 1.6666666666666665,
+        "maximum": 1.75
+      },
+      "critical_availability_pct": {
+        "mean": 92.84722222222221,
+        "minimum": 92.70833333333333,
+        "maximum": 93.05555555555556
+      },
+      "scarcity_critical_availability_pct": {
+        "mean": 82.83333333333333,
+        "minimum": 82.5,
+        "maximum": 83.33333333333333
+      }
+    }
+  }
+]
